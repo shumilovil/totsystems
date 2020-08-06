@@ -1,12 +1,11 @@
 import businessModeBackGround from './assets/background1.jpg';
 import personalModeBackGround from './assets/background2.jpg';
-
 const { default: styled } = require("styled-components");
 
 
 export const MessagesArea = styled.div`
 overflow: auto;
-height: 530px;
+height: 700px;
 background-image: url(${props => props.business ? businessModeBackGround : personalModeBackGround} );
 background-position: center;
 `
@@ -17,6 +16,7 @@ justify-content: ${props => props.isOwnMessage ? 'flex-end' : 'flex-start'};
 margin-left: 10px;
 margin-right: 10px;
 margin-top: 5px;
+margin-bottom: 25px;
 padding-top: 5px;
 padding-bottom: 5px;
 position: relative;
@@ -33,16 +33,14 @@ margin-left: 5px;
 
 export const StyledInput = styled.textarea`
 width: 92%;
-height: 100px;
+height: 80px;
 outline: none;
 margin-top: 20px;
 padding-top: 20px;
 padding-bottom: 20px;
 padding-right: 0px;
 padding-left: 2%;
-background-color: #efefef;    
-
-
+background-color: #efefef;
 text-align: left;
 border: none;
 border-radius: 20px;

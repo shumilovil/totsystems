@@ -44,7 +44,7 @@ export const MainArea = (props) => {
         validate,
         onSubmit: async (values) => {
             await addMessage(values.message, props.userData, isBusinessMode)
-            await refreshMessages();
+            refreshMessages();
             formik.handleReset();
         }
     });
@@ -66,10 +66,7 @@ export const MainArea = (props) => {
                 <div className='logoutWrapper'>
                     <Button onClick={props.logOut}>Log Out</Button>
                 </div>
-                <div className='communicationModes'>
-                    <Option chosen={isBusinessMode ? true : false} onClick={isBusinessMode ? null : toggleBusinessMode}>Business Themes</Option>
-                    <Option chosen={!isBusinessMode ? true : false} onClick={!isBusinessMode ? null : toggleBusinessMode}>Personal Themes</Option>
-                </div>
+                
                 <MessagesArea business={isBusinessMode ? true : false}>
                     <div className='messagesWrapper' >
                         {
@@ -82,7 +79,9 @@ export const MainArea = (props) => {
                                             avatar={message.author.avatar}
                                             name={message.author.name}
                                             isOwnMessage={message.author.id === props.userData.id ? true : false}
-                                            refreshMessages={refreshMessages} />
+                                            refreshMessages={refreshMessages}
+                                            userData={props.userData}
+                                            isBusinessMode={isBusinessMode} />
                                     )
                                 } else {
                                     return null
@@ -92,6 +91,10 @@ export const MainArea = (props) => {
                         <div ref={messagesEndRef} />
                     </div>
                 </MessagesArea>
+                <div className='communicationModes'>
+                    <Option chosen={isBusinessMode ? true : false} onClick={isBusinessMode ? null : toggleBusinessMode}>Business Themes</Option>
+                    <Option chosen={!isBusinessMode ? true : false} onClick={!isBusinessMode ? null : toggleBusinessMode}>Personal Themes</Option>
+                </div>
                 <form onSubmit={formik.handleSubmit}>
                     <div>
                         <StyledInput

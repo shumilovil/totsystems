@@ -11,16 +11,16 @@ function App() {
     const [userData, setUserData] = useState({})
 
     const handleAuthorisation = (formValues) => {
-  
+
         authorise().then(response => {
-          const currentUser = response.find(user => {
-            return formValues.email === user.loginData.email && formValues.password === user.loginData.password
-          })
-            if (currentUser) {                
+            const currentUser = response.find(user => {
+                return formValues.email === user.loginData.email && formValues.password === user.loginData.password
+            })
+            if (currentUser) {
                 setUserData({
-                  id: currentUser.id,
-                  name: currentUser.name,
-                  avatar: currentUser.avatar
+                    id: currentUser.id,
+                    name: currentUser.name,
+                    avatar: currentUser.avatar
                 })
                 setAuthorisation(true);
             } else {
@@ -32,7 +32,7 @@ function App() {
 
     return (
         <div className="App">
-            {isAuthorised ? <MainArea userData={userData} logOut={() => {setAuthorisation(false)}}/> : <Login handleAuthorisation={handleAuthorisation} />}
+            {isAuthorised ? <MainArea userData={userData} logOut={() => { setAuthorisation(false) }} /> : <Login handleAuthorisation={handleAuthorisation} />}
         </div>
     );
 }

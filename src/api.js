@@ -24,3 +24,11 @@ export const deleteMessage = (messageId) => {
     return axios.delete(`http://localhost:4001/messages/${messageId}`)
 }
 
+export const updateMessage = (messageId, author, newMessageText, isBusiness) => {
+    return axios.put(`http://localhost:4001/messages/${messageId}`, {
+        author,
+        message: newMessageText,
+        isBusiness
+    })
+}
+

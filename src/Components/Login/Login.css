@@ -1,0 +1,23 @@
+.login input {
+    width: 300px;
+    background-color: #efefef;    
+    padding: 20px 30px;
+    text-align: left;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.login Button {
+    margin-top: 50px;
+    margin-bottom: 20px;    
+}
+
+.email, .password {
+    margin-top: 15px;
+}
+
+.error {
+    font-weight: bold;
+    color: red;
+}

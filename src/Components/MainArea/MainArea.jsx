@@ -51,7 +51,6 @@ export const MainArea = (props) => {
 
     const messagesEndRef = useRef(null);
     const scrollToBottom = () => {
-        console.log('hook');
         messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
     };
     useEffect(scrollToBottom, [messages]);

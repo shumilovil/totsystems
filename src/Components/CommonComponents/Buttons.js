@@ -1,4 +1,4 @@
-import crossButton from './assets/cross1.svg';
+import crossButton from './assets/cross.svg';
 const { default: styled } = require("styled-components");
 
 

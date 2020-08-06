@@ -128,6 +128,36 @@
       },
       "isBusiness": false,
       "id": 91
+    },
+    {
+      "message": "I will join you!",
+      "author": {
+        "id": 1,
+        "name": "Stan",
+        "avatar": "http://progphp.free.fr/QuizramaImages/117.png"
+      },
+      "isBusiness": false,
+      "id": 92
+    },
+    {
+      "message": "I hope so!",
+      "author": {
+        "id": 1,
+        "name": "Stan",
+        "avatar": "http://progphp.free.fr/QuizramaImages/117.png"
+      },
+      "isBusiness": true,
+      "id": 93
+    },
+    {
+      "message": "I can help you if you need!",
+      "author": {
+        "id": 3,
+        "name": "Milla",
+        "avatar": "https://krot.info/uploads/posts/2019-02/1551211193_celeber_ru_milla_jovovich_el_corte_ingles_photoshoot_2014_07.jpg"
+      },
+      "isBusiness": true,
+      "id": 94
     }
   ]
 }

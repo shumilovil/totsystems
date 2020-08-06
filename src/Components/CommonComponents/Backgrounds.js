@@ -5,7 +5,8 @@ const { default: styled } = require("styled-components");
 
 
 export const MessagesArea = styled.div`
-border-radius: 20px;
+overflow: auto;
+height: 530px;
 background-image: url(${props => props.business ? businessModeBackGround : personalModeBackGround} );
 background-position: center;
 `
@@ -31,7 +32,7 @@ margin-left: 5px;
 `
 
 export const StyledInput = styled.textarea`
-width: 98%;
+width: 92%;
 height: 100px;
 outline: none;
 margin-top: 20px;

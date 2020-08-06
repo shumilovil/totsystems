@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Title } from '../CommonComponents/Titles';
 import { Avatar } from '../CommonComponents/Pictures';
 import './MainArea.css';
@@ -13,8 +13,7 @@ const validate = values => {
     const errors = {};
     if (!values.message) {
         errors.message = 'This field is required';
-    }    
-
+    }
     return errors;
 }
 
@@ -44,11 +43,18 @@ export const MainArea = (props) => {
         },
         validate,
         onSubmit: async (values) => {
-            await addMessage(values.message, props.userData, isBusinessMode) 
-            await refreshMessages();                                 
-            formik.handleReset();                                                          
+            await addMessage(values.message, props.userData, isBusinessMode)
+            await refreshMessages();
+            formik.handleReset();
         }
     });
+
+    const messagesEndRef = useRef(null);
+    const scrollToBottom = () => {
+        console.log('hook');
+        messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+    };
+    useEffect(scrollToBottom, [messages]);
 
     return (
         <div className='mainArea'>
@@ -65,44 +71,44 @@ export const MainArea = (props) => {
                     <Option chosen={!isBusinessMode ? true : false} onClick={!isBusinessMode ? null : toggleBusinessMode}>Personal Themes</Option>
                 </div>
                 <MessagesArea business={isBusinessMode ? true : false}>
-                    <div className='messagesWrapper'>
+                    <div className='messagesWrapper' >
                         {
                             messages.map(message => {
                                 if (message.isBusiness === isBusinessMode) {
                                     return (
                                         <Message key={message.id}
-                                        id={message.id}
-                                        message={message.message}
-                                        avatar={message.author.avatar} 
-                                        name={message.author.name}
-                                        isOwnMessage={message.author.id === props.userData.id ? true : false}
-                                        refreshMessages={refreshMessages}/>
+                                            id={message.id}
+                                            message={message.message}
+                                            avatar={message.author.avatar}
+                                            name={message.author.name}
+                                            isOwnMessage={message.author.id === props.userData.id ? true : false}
+                                            refreshMessages={refreshMessages} />
                                     )
                                 } else {
                                     return null
-                                }                                
+                                }
                             })
                         }
+                        <div ref={messagesEndRef} />
                     </div>
                 </MessagesArea>
                 <form onSubmit={formik.handleSubmit}>
-                <div>
-                    <StyledInput 
-                        id="message"
-                        name="message"
-                        type="text"
-                        placeholder='Type your message here'
-                        onChange={formik.handleChange}
-                        value={formik.values.message}
-                        onBlur={formik.handleBlur}                        
-                    />
-                </div>               
-                <div className="sendMessageButton">
-                    <Button big type="submit">Send message</Button>
-                </div>
-            </form>
+                    <div>
+                        <StyledInput
+                            id="message"
+                            name="message"
+                            type="text"
+                            placeholder='Type your message here'
+                            onChange={formik.handleChange}
+                            value={formik.values.message}
+                            onBlur={formik.handleBlur}
+                        />
+                    </div>
+                    <div className="sendMessageButton">
+                        <Button big type="submit">Send message</Button>
+                    </div>
+                </form>
             </div>
-            
         </div>
     )
 }

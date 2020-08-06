@@ -5,13 +5,15 @@
 
 .extraMainAreaWrapper {
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+   
 }
 
 .avatarWrapper {
     padding-top: 20px;    
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
     
 }
 
@@ -30,11 +32,14 @@
 .messagesWrapper {
     padding-top: 10px;
     padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .sendMessageButton {
     margin-top: 10px;
     text-align: left;
+    margin-left: 3%;
 }
 
 

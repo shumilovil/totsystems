@@ -5,10 +5,8 @@ const { default: styled } = require("styled-components");
 
 
 export const MessagesArea = styled.div`
-
 border-radius: 20px;
 background-image: url(${props => props.business ? businessModeBackGround : personalModeBackGround} );
-background-size: cover;
 background-position: center;
 `
 
@@ -24,7 +22,6 @@ position: relative;
 `
 
 export const MessageText = styled.div`
-
 text-align: left;
 text-transform: none;
 background-color: ${props => props.isOwnMessage ? '#effdde' : 'white'};

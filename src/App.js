@@ -7,13 +7,8 @@ import { MainArea } from './Components/MainArea/MainArea';
 
 function App() {
 
-    const [isAuthorised, setAuthorisation] = useState(true);
-    const [userData, setUserData] = useState({
-        id: 2,
-        name: "Arnold",
-        avatar: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg",
-        
-    })
+    const [isAuthorised, setAuthorisation] = useState(false);
+    const [userData, setUserData] = useState({})
 
     const handleAuthorisation = (formValues) => {
   

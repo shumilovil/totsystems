@@ -102,6 +102,7 @@ export const MainArea = (props) => {
                 </div>
             </form>
             </div>
+            
         </div>
     )
 }

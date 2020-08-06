@@ -30,154 +30,104 @@
   ],
   "messages": [
     {
-      "id": 1,
-      "message": "Hello! How are апапапа апапапап    папапа  папапа аппапа папаап папапа папапапапапапапапапа папапапапапапапапапа папапапапапапапапапа папапапапапапапапапа папапапапапапапапапа папапапапапапапапапа папапапапапапапапапа папапапапапапапапапа ",
-      "author": {
-        "id": 2,
-        "name": "Arnold",
-        "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg"
-      },
-      "isBusiness": true
-    },
-    {
-      "id": 2,
-      "message": "I'll be back!",
-      "author": {
-        "id": 2,
-        "name": "Arnold",
-        "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg"
-      },
-      "isBusiness": true
-    },
-    {
-      "id": 3,
-      "message": "Hello, my friends!",
+      "message": "Hi, guys!",
       "author": {
         "id": 1,
         "name": "Stan",
         "avatar": "http://progphp.free.fr/QuizramaImages/117.png"
       },
-      "isBusiness": false
+      "isBusiness": true,
+      "id": 82
     },
     {
-      "id": 4,
-      "message": "i wanna back to the office!",
+      "message": "Let's discuss something personal!",
+      "author": {
+        "id": 1,
+        "name": "Stan",
+        "avatar": "http://progphp.free.fr/QuizramaImages/117.png"
+      },
+      "isBusiness": false,
+      "id": 83
+    },
+    {
+      "message": "I'll be back!!!",
+      "author": {
+        "id": 2,
+        "name": "Arnold",
+        "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg"
+      },
+      "isBusiness": true,
+      "id": 84
+    },
+    {
+      "message": "I've bought a new house!!!",
+      "author": {
+        "id": 2,
+        "name": "Arnold",
+        "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg"
+      },
+      "isBusiness": false,
+      "id": 85
+    },
+    {
+      "message": "I wanna back to the office! I miss you, guys!",
       "author": {
         "id": 3,
         "name": "Milla",
         "avatar": "https://krot.info/uploads/posts/2019-02/1551211193_celeber_ru_milla_jovovich_el_corte_ingles_photoshoot_2014_07.jpg"
       },
-      "isBusiness": true
+      "isBusiness": true,
+      "id": 86
     },
     {
-      "message": "Шум Шум",
+      "message": "Let's go to the bar next week!",
+      "author": {
+        "id": 3,
+        "name": "Milla",
+        "avatar": "https://krot.info/uploads/posts/2019-02/1551211193_celeber_ru_milla_jovovich_el_corte_ingles_photoshoot_2014_07.jpg"
+      },
+      "isBusiness": false,
+      "id": 87
+    },
+    {
+      "message": "Oh, my God! I have a pile of new tasks! ",
+      "author": {
+        "id": 1,
+        "name": "Stan",
+        "avatar": "http://progphp.free.fr/QuizramaImages/117.png"
+      },
+      "isBusiness": true,
+      "id": 88
+    },
+    {
+      "message": "Don't worry, Stan! You will handle it! You are a clever guy!",
       "author": {
         "id": 2,
         "name": "Arnold",
         "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg"
       },
       "isBusiness": true,
-      "id": 5
+      "id": 89
     },
     {
-      "message": "Привет, как дела??",
-      "author": {
-        "id": 2,
-        "name": "Arnold",
-        "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg"
-      },
-      "isBusiness": true,
-      "id": 6
-    },
-    {
-      "message": "Pop",
-      "author": {
-        "id": 2,
-        "name": "Arnold",
-        "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg"
-      },
-      "isBusiness": true,
-      "id": 7
-    },
-    {
-      "message": "ddd",
-      "author": {
-        "id": 2,
-        "name": "Arnold",
-        "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg"
-      },
-      "isBusiness": true,
-      "id": 8
-    },
-    {
-      "message": "вава",
-      "author": {
-        "id": 2,
-        "name": "Arnold",
-        "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg"
-      },
-      "isBusiness": true,
-      "id": 9
-    },
-    {
-      "message": "wwww",
-      "author": {
-        "id": 2,
-        "name": "Arnold",
-        "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg"
-      },
-      "isBusiness": true,
-      "id": 12
-    },
-    {
-      "message": "wwwwww",
-      "author": {
-        "id": 2,
-        "name": "Arnold",
-        "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg"
-      },
-      "isBusiness": true,
-      "id": 13
-    },
-    {
-      "message": "d",
+      "message": "Sounds tempting!",
       "author": {
         "id": 2,
         "name": "Arnold",
         "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg"
       },
       "isBusiness": false,
-      "id": 24
+      "id": 90
     },
     {
-      "message": "d",
+      "message": "Perfect idea!",
       "author": {
-        "id": 2,
-        "name": "Arnold",
-        "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg"
+        "id": 1,
+        "name": "Stan",
+        "avatar": "http://progphp.free.fr/QuizramaImages/117.png"
       },
       "isBusiness": false,
-      "id": 25
-    },
-    {
-      "message": "d",
-      "author": {
-        "id": 2,
-        "name": "Arnold",
-        "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg"
-      },
-      "isBusiness": false,
-      "id": 26
-    },
-    {
-      "message": "999",
-      "author": {
-        "id": 2,
-        "name": "Arnold",
-        "avatar": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/3b22e58130541.5b29dea835a26.jpg"
-      },
-      "isBusiness": false,
-      "id": 32
+      "id": 91
     }
   ]
 }
